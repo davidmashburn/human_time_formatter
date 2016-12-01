@@ -13,7 +13,7 @@ setup(
     scripts=[],
     url='http://pypi.python.org/pypi/human_time_formatter/',
     license='LICENSE.txt',
-    description='<ADD DESCRIPTION>',
+    description='Human-readable time delta formatter with relative precision ("ndigits")',
     long_description=open('README.txt').read(),
     install_requires=[
                       
