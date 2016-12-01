@@ -1,4 +1,4 @@
-'''Human-readable time delta formater with relative precision ("ndigits")
+'''Human-readable time delta formatter with relative precision ("ndigits")
 Gives human-readable output for basic timing benchmarks
 Returns a string formatted in: "Y years, W weeks, D days, HH:MM:SSs"
   (or ms, us, ns, ps, fs for very small times)
@@ -48,7 +48,7 @@ def convert_ywdhms_to_seconds(y, w, d, h, m, s):
     return s
 
 def format_seconds(total_seconds, ndigits=3):
-    '''Human-readable time delta formater with relative precision ("ndigits")
+    '''Human-readable time delta formatter with relative precision ("ndigits")
        Gives human-readable output for basic timing benchmarks
        Returns a string formatted in: "Y years, W weeks, D days, HH:MM:SSs"
          (or ms, us, ns, ps, fs for very small times)
