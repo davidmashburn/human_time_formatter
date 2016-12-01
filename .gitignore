@@ -1,0 +1,10 @@
+# Ignore these auto-generated files:
+*.pyc
+*.pyo
+*~
+dist
+build
+zips
+human_time_formatter.egg-info
+MANIFEST
+dnmPrivate
