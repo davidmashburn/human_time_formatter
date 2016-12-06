@@ -1,3 +1,5 @@
+from builtins import zip
+from builtins import range
 from human_time_formatter import format_seconds, convert_ywdhms_to_seconds
 
 def test_format_seconds_1():

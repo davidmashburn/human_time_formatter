@@ -27,6 +27,9 @@ Examples with ndigits=4:
   format_seconds(68875680.3) -> "2 years, 9 weeks, 4 days"
   format_seconds(276054002.) -> "8 years, 39 weeks, 2 days"
 '''
+from __future__ import print_function
+from builtins import str
+from builtins import range
 
 def divmod_seconds(total_seconds):
     '''Approximately break seconds into years, days, hours, minutes, seconds
@@ -134,9 +137,9 @@ def format_seconds(total_seconds, ndigits=3):
 
 if __name__ == "__main__":
     # Examples :)
-    print 'input seconds   formatted_time            (y, w, d, h, m, s)'
+    print('input seconds   formatted_time            (y, w, d, h, m, s)')
     x_list = [2.002 ** (i - 10) for i in range(0, 40, 2)]
     for x in x_list:
-        print '{0: <10}'.format(x)[:10] + '     ',
-        print '{0: <25}'.format(format_seconds(x, ndigits=4)),
-        print str(divmod_seconds(x))
+        print('{0: <10}'.format(x)[:10] + '     ', end=' ')
+        print('{0: <25}'.format(format_seconds(x, ndigits=4)), end=' ')
+        print(str(divmod_seconds(x)))
